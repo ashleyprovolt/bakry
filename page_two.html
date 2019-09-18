@@ -1,0 +1,126 @@
+<!DOC>
+
+        <html>
+        
+        <head>
+                <!--
+                    This page is for Portfolio project: Web Styling
+        
+                    home page
+                    Auther: Ashley P
+                    Date: 2/7/2019
+        
+                    Filename: page_one.html
+                -->
+        
+                <title>Ashy's Bakery</title>
+                <meta charset="utf-8" />
+                <link href="css/style.css" rel="stylesheet">
+
+                <script src="port_formsubmit"></script>
+        
+        </head>
+        
+        <body>
+            <div id=wrap2>
+            <header>
+                <h1>Ashy's bakery Order</h1>
+        
+                <nav class="horizontal" id="top">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page_two.html">Order</a></li>
+                        <li><a href="page_three.html">Contact us</a></li>
+                        <li><a href="login.php">Employee</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <p>You can sign up to get emails over Ashy's bakery and
+                also get deals on our delicious desserts.
+            </p>
+            <form action="thankyou.php" method="post">
+                
+                <div id="infromation">
+                    <label id="firstlabel">Order here</label> <br/><br/>
+                <div>
+                <label for="nameBox">Name* </label>
+                <input name="ordername" id="nameBox" type="text" placeholder="first & last name"
+                required />
+                </div> 
+                <br> 
+                <div>
+                <label for="phoneBox">Phone number* </label>
+                <input name="orderphone" id="phoeBox" type="text" placeholder="(nnn) nnn-nnnn"
+                required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                </div>
+                <br>
+                <div>
+                <label for="Email">Email: </label>
+                <input name="orderemail" id="Email" type="text" placeholder="example@email.com" 
+                       required />
+                </div>
+                
+                <br> 
+                <div>
+                <label for="street">Street: </label>
+                <input id="streetBox" name="street" type="text" required >
+                </div>
+                <br>
+                <div>
+                <label for="city">City: </label>
+                <input id="cityBox" name="city" type="text" required> 
+                </div>
+                <br> 
+                <div>
+                <label for="state">State: </label>
+                <input id="stateBox" name="state" type="text" required>
+                </div>
+                <br>
+                <div>
+                    <label for="zipcode">Zipcode: </label>
+                    <input id="zipBox" name="zipcode" type="text">
+                </div>
+                <br>
+                <div>
+                <input name="sendemail" id="emaillist" value="yes" type="checkbox" />
+                <label for="emailist">Add me to Ashy's bakery email list for specials</label>
+                </div>
+                <br>
+                </div>
+                <div id="ordering">
+                    <div>
+                    <label for="items">What type of desserts</label>
+                    <select name="orderitems" id="items">
+                        <option value="cake">Cake</option>
+                        <option value="cupcakes">Cup cake</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="marons"> macarons</option>
+                        <option value="Brownies">Brownies</option>
+                    </select>
+                    <label for="flavor"> What type of flavors</label>
+                    <select id="flavor" name="itemsflavor">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="lemon">Lemon zest</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                <input type="submit" id="submit2" value="Submit order" class="order">
+                <input type="reset" value="Cancel" />
+                </div>
+            </form>
+            <footer>
+                <br>
+                <a href="https://github.com/" target="_blank"><img src="image/github.png" alt="github icon" /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="image/linkedin.png" alt="linkedin icon" /></a>
+                <br>
+                &copy; Copyright 2017. All Rights Reserved<br>
+            <p>Email: <a href="mailto:ashleyprovolt@mycwi.cc">ashleyprovolt@mycwi.cc</a></p> 
+            </footer>
+        </div>
+        </body>
+        
+        </html>
